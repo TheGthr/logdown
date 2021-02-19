@@ -23,7 +23,8 @@
     "hollowtree.vue-snippets",
     "steoates.autoimport",
     "editorconfig.editorconfig",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss"
   ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
