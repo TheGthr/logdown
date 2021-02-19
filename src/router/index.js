@@ -16,7 +16,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/catchAll(.*)',
+    path: '/:catchAll(.*)',
     redirect: '/'
   }
 ]
