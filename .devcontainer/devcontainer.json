@@ -20,7 +20,10 @@
     "octref.vetur",
     "dbaeumer.vscode-eslint",
     "ms-azuretools.vscode-docker",
-    "hollowtree.vue-snippets"
+    "hollowtree.vue-snippets",
+    "steoates.autoimport",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode"
   ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
