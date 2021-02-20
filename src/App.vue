@@ -1,10 +1,20 @@
 <template>
-  <div id="nav" class="w-auto bg-gray-800">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div id="ld-container" class="flex h-screen">
+    <Navigator />
+    <div class="flex w-screen bg-gray-600">
+      <router-view />
+    </div>
   </div>
-  <router-view />
 </template>
+
+<script>
+import Navigator from '@/components/Navigator';
+export default {
+  components: {
+    Navigator
+  }
+}
+</script>
 
 <style>
 #app {
