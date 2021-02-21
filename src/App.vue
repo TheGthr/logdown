@@ -1,40 +1,43 @@
 <template>
   <div id="ld-container" class="flex h-screen">
-    <Navigator />
-    <div class="flex w-screen bg-gray-600">
+    <Navbar />
+    <div
+      id="content"
+      class="flex justify-center items-center w-screen bg-gray-700 text-gray-300"
+    >
       <router-view />
     </div>
   </div>
 </template>
 
 <script>
-import Navigator from '@/components/Navigator';
+import Navbar from "@/components/Navbar";
 export default {
   components: {
-    Navigator
-  }
-}
+    Navbar,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface");
+
+html {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+@media (min-width: 48em) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 58em) {
+  html {
+    font-size: 20px;
+  }
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+/* Content */
+#content {
+  background-color: #282c34;
 }
 </style>
