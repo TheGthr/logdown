@@ -1,4 +1,4 @@
-import VueI18n from 'vue-i18n';
+import { createI18n } from 'vue-i18n'
 
 const messages = {
   en: {
@@ -9,7 +9,7 @@ const messages = {
   }
 }
 
-const i18n = VueI18n.createI18n({
+const i18n = createI18n({
   locale: 'en',
   fallbackLocale: 'fr',
   messages

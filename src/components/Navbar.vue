@@ -9,12 +9,12 @@
       <router-link class="sidebar-nav-item" to="/resume">Resume</router-link>
 
       <div class="flex justify-between">
-        <div class="flex justify-between w-1/5">
+        <div class="flex justify-between">
           <a class="sidebar-nav-icons" href="https://github.com/TheoGthr">
-            <font-awesome-icon :icon="['fab', 'fa-github']" />
+            <font-awesome-icon :icon="['fab', 'github']" />
           </a>
           <a class="sidebar-nav-icons" href="https://twitter.com/TheoGFasee">
-            <font-awesome-icon :icon="['fab', 'fa-twitter']" />
+            <font-awesome-icon :icon="['fab', 'twitter']" />
           </a>
         </div>
         <div>
