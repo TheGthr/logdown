@@ -1,20 +1,20 @@
 <template>
-  <div id="nav" class="sidebar w-3/12 flex flex-col justify-end items-end">
+  <div id="nav" class="sidebar w-1/5 flex flex-col justify-end items-end">
     <div class="sidebar-about">
       <h1>Logdown</h1>
       <p class="lead">Un peu de cryptographie, de développement web et 3D</p>
     </div>
     <nav class="sidebar-nav">
-      <router-link class="sidebar-nav-item" to="/">Home</router-link> |
+      <router-link class="sidebar-nav-item" to="/">Home</router-link>
       <router-link class="sidebar-nav-item" to="/resume">Resume</router-link>
 
-      <div class="sub-menu-icons">
-        <div class="external-links">
+      <div class="flex justify-between">
+        <div class="flex justify-between w-1/5">
           <a class="sidebar-nav-icons" href="https://github.com/TheoGthr">
-            <font-awesome-icon icon="github" />
+            <font-awesome-icon :icon="['fab', 'fa-github']" />
           </a>
           <a class="sidebar-nav-icons" href="https://twitter.com/TheoGFasee">
-            <font-awesome-icon icon="twitter" />
+            <font-awesome-icon :icon="['fab', 'fa-twitter']" />
           </a>
         </div>
         <div>
@@ -59,10 +59,8 @@ export default {
   .sidebar {
     position: fixed;
     top: 0;
-    left: 0;
     bottom: 0;
-    width: 18rem;
-    text-align: left;
+    text-align: right;
   }
 }
 
@@ -104,19 +102,8 @@ a.sidebar-nav-item:focus {
 }
 
 .lead {
-  color: rgb(88, 88, 88);
+  color: rgb(55, 55, 55);
   font-size: 1.25rem;
-  font-weight: 300;
-}
-
-.sub-menu-icons {
-  display: flex;
-  justify-content: space-between;
-}
-
-.external-links {
-  display: flex;
-  width: 20%;
-  justify-content: space-between;
+  font-weight: 350;
 }
 </style>
