@@ -4,7 +4,6 @@
       <div class="mat-card-avatar">
         <font-awesome-icon :icon="['fas', 'graduation-cap']" />
       </div>
-      <p>{{ $t("home.navbar.description") }}</p>
       <div class="mat-card-title">"'resume.education.title' | translate"</div>
     </div>
     <div class="mat-card-content mat-typography">
@@ -76,78 +75,5 @@ export default {
   name: "ResumeEducation",
 };
 </script>
-
 <style>
 </style>
-
-<i18n src="./i18n-resume.json"></i18n>
-<!--i18n>
-{
-  "en": {
-    "home": {
-      "navbar": {
-        "description": "Some thoughts about cryptography, web development and 3D graphics",
-        "legal": "© 2020 All rights reserved.",
-        "home-link": "Home",
-        "resume-link": "Resume",
-        "language-tooltip": "Language"
-      }
-    },
-    "resume": {
-      "experiences": {
-        "title": "Experience",
-        "sopra": {
-          "title": "Sopra Steria, Lyon",
-          "duration": "02/2019 - now",
-          "jobs": {
-            "one": "<div class='job-header'>Fullstack developer (04/20 - now)</div><div><b>Redesign and technical levels of various web applications</b> on behalf of a major French energy company. Integrated in an <b>Agile SAFe dev team</b>, I have to redesign old applications, in technical and architectural terms. We have to make them safe in terms of <b>web security</b> (SAST, audits), user-friendly (UX design, support, new interface), and developer-friendly (working CI/CD, new technical stacks).</div><i>Context: Java EE (6, 7 and 8), JSP, Gitlab/Jenkins, Ansible, CxSAST, OWASP ZAP</i>",
-            "two": "<div class='job-header'>AppSec team member (03/20 - now)</div><div>As a member of the web application security guild (AppSec), I promote the good practices for web security and I train my collaborators to web security concepts and tools. I also organized a pentest contest on the applications I work on.</div><i>Context: Checkmarx SAST, OWASP ZAP, RootMe challenges</i>",
-            "three": "<div class='job-header'>DevSecOps team developer (01/20 - 04/20)</div><div>Realization of various <b>CI/CD developments</b> on behalf of a major French energy company. Integrated in a <b>DevSecOps team</b>, I had the occasion to acquire new technical skills, discover CI/CD development and DevSecOps methodology. I had to help various project teams with their CI/CD stacks and develop new solutions for them.</div><i>Context: Jenkins, Ansible, Gitlab, Docker, RedHat OS, Git Flow</i>",
-            "four": "<div class='job-header'>Fullstack developer (02/19 - 12/19)</div><div>Development of a web application on behalf of a major French energy company. Integrated in a small dev team, I had the occasion to acquire technical skills, help the development of a largely used application and <b>work with SAFe framework, in interaction with various trades : UX Designer, Product Owners, Business Managers, Architects</b>... Number of single users per month: 35000.</div><i>Context: Agile SAFe project, Angular 7, Material design, Java Spring, Hibernate, Elastic ELK</i>"
-          }
-        },
-        "exyzt": {
-          "title": "EXYZT, Castres",
-          "duration": "07/2018 - 08/2018",
-          "job": "<div class='job-header'>Back-End developer intern</div>Development of a NodeJS server longpolling a CouchDB instance, formatting and sending the data to adistant server. Development of a functionality to an existing data dispatcher to send pictures from a PDA to a distant server. <i>Context: NodeJS, CouchDB, PHP</i>"
-        },
-        "prefecture": {
-          "title": "Prefecture of Gard, Nîmes",
-          "duration": "01/2017 - 03/2017",
-          "job": "<div class='job-header'>Front-End developer intern</div>Development of new intranet websites from scratch and update of existing ones. <i>Context: HTML5, CSS3, Bootstrap, PHP, Ubuntu Server</i>"
-        }
-      },
-      "education": {
-        "title": "Education",
-        "cvut": {
-          "title": "Erasmus - Informatics Engineer",
-          "subtitle": "Czech technical university (CVUT), Prague",
-          "duration": "09/2018 - 02/2019",
-          "description": "Courses of advanced cryptology, web services and middleware, information security, law and informatics, network security and distributed systems and computing."
-        },
-        "tse": {
-          "title": "Informatics and Image Engineer",
-          "subtitle": "Great Engineering School Télécom Saint-Etienne",
-          "duration": "2016 - 2019",
-          "description": "Courses of web, Java and C/C++ development, Agile methods, computer science. Cryptology option."
-        },
-        "prepa": {
-          "title": "Preparatory School (CPGE) - Maths and Physics",
-          "subtitle": "Lafayette, Clermont-Ferrand",
-          "duration": "2014 - 2016",
-          "description": "Courses of maths, physics and informatics fundamentals."
-        }
-      },
-      "interests": {
-        "title": "Interests",
-        "music": "Music (Jazz, DnB)",
-        "instruments": "Drums, piano",
-        "cooking": "Cooking",
-        "running": "Running",
-        "community": "Community work"
-      }
-    }
-  }
-}
-
-</i18n-->

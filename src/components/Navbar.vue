@@ -2,11 +2,15 @@
   <div id="sidebar">
     <div id="sidebar-about">
       <h1>Logdown</h1>
-      <p class="lead">Un peu de cryptographie, de développement web et 3D</p>
+      <p class="lead">{{ $t("home.navbar.description") }}</p>
     </div>
     <nav id="sidebar-nav">
-      <router-link class="sidebar-nav-item" to="/">Home</router-link>
-      <router-link class="sidebar-nav-item" to="/resume">Resume</router-link>
+      <router-link class="sidebar-nav-item" to="/">{{
+        $t("home.navbar.home-link")
+      }}</router-link>
+      <router-link class="sidebar-nav-item" to="/resume">{{
+        $t("home.navbar.resume-link")
+      }}</router-link>
 
       <div class="justify-between">
         <div class="justify-between">
@@ -29,6 +33,10 @@
             <button mat-menu-item (click)="setLang('fr')">Français</button>
             <button mat-menu-item (click)="setLang('en')">English</button>
           </mat-menu-->
+          <select v-model="$i18n.locale">
+            <option>en</option>
+            <option>fr</option>
+          </select>
         </div>
       </div>
     </nav>
@@ -120,5 +128,4 @@ a.sidebar-nav-item:focus {
   font-size: 1.25rem;
   font-weight: 350;
 }
-
 </style>
