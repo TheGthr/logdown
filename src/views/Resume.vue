@@ -23,46 +23,18 @@ export default {
 .container {
   max-width: 100%;
   display: flex;
-}
-
-@media (min-width: 64em) {
-  .content {
-    margin-left: 22rem;
-    margin-right: 4rem;
-  }
-}
-
-@media (min-width: 48em) {
-  .content {
-    max-width: 38rem;
-    margin-left: 20rem;
-    margin-right: 2rem;
-  }
-}
-
-.content {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-left: 22rem;
+  margin-right: 4rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-.container {
-  max-width: 38rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .resume-left {
   flex-shrink: 1.5;
   line-height: 1.5;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  color: #9da5b4;
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
   margin-bottom: 1rem;
@@ -80,5 +52,15 @@ export default {
 
 .resume-card {
   margin-bottom: 1rem;
+}
+
+.job-header {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+b {
+  font-weight: 450;
+  font-style: italic;
 }
 </style>

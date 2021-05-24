@@ -19,7 +19,6 @@ export default {
 <style>
 #ld-container {
   display: flex;
-  height: 100vh;
 }
 
 /* Content */

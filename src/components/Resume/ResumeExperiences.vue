@@ -1,12 +1,10 @@
 <template>
-  <div class="mat-card">
-    <div class="mat-card-header">
-      <div mat-card-avatar>
-        <font-awesome-icon :icon="['fas', 'brief-case']" />
-      </div>
-      <div class="mat-card-title">{{ $t("resume.experiences.title") }}</div>
+  <div class="ld-card">
+    <div class="ld-card-header">
+      <font-awesome-icon :icon="['fas', 'brief-case']" />
+      <div class="ld-card-title">{{ $t("resume.experiences.title") }}</div>
     </div>
-    <div class="mat-card-content mat-typography">
+    <div class="ld-card-content mat-typography">
       <!-- Sopra Steria -->
       <div class="experience-item">
         <div class="enterprise-date">
@@ -93,15 +91,3 @@ export default {
   name: "ResumeExperiences",
 };
 </script>
-
-<style>
-.job-header {
-  font-weight: 500;
-  font-size: 17px;
-}
-
-b {
-  font-weight: 450;
-  font-style: italic;
-}
-</style>

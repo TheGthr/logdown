@@ -12,7 +12,7 @@
         $t("home.navbar.resume-link")
       }}</router-link>
 
-      <div id="nav-icons" class="justify-between">
+      <div id="nav-icons" class="ld-justify-between">
         <button id="lang-btn">
           <font-awesome-icon :icon="['fas', 'globe']" />
           <ul id="lang-menu">
@@ -20,7 +20,7 @@
             <li role="listitem" @click="$i18n.locale = 'fr'">Français</li>
           </ul>
         </button>
-        <div class="justify-between sidebar-nav-icons">
+        <div class="ld-justify-between sidebar-nav-icons">
           <a class="sidebar-nav-icon" href="https://github.com/TheoGthr">
             <font-awesome-icon :icon="['fab', 'github']" />
           </a>
@@ -88,7 +88,7 @@ li:hover {
  * out above content in mobile and later moves to the side with wider viewports.
  */
 #sidebar {
-  width: 18%;
+  width: 17%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

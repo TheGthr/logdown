@@ -1,12 +1,10 @@
 <template>
-  <div class="mat-card">
-    <div class="mat-card-header">
-      <div mat-card-avatar>
-        <font-awesome-icon :icon="['fas', 'heart']" />
-      </div>
-      <div class="mat-card-title">{{ $t("resume.interests.title") }}</div>
+  <div class="ld-card">
+    <div class="ld-card-header">
+      <font-awesome-icon :icon="['fas', 'heart']" />
+      <div class="ld-card-title">{{ $t("resume.interests.title") }}</div>
     </div>
-    <div class="mat-card-content mat-typography">
+    <div class="ld-card-content">
       <div class="all-interests">
         <div class="two-interests">
           <div class="interest">
@@ -44,5 +42,3 @@ export default {
   name: "ResumeInterests",
 };
 </script>
-
-<style></style>

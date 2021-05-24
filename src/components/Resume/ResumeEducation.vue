@@ -1,9 +1,7 @@
 <template>
-  <div class="mat-card">
-    <div class="mat-card-header">
-      <div class="mat-card-avatar">
-        <font-awesome-icon :icon="['fas', 'graduation-cap']" />
-      </div>
+  <div class="ld-card">
+    <div class="ld-card-header">
+      <font-awesome-icon :icon="['fas', 'graduation-cap']" />
       <div class="mat-card-title">{{ $t("resume.education.title") }}</div>
     </div>
     <div class="mat-card-content mat-typography">
@@ -75,4 +73,3 @@ export default {
   name: "ResumeEducation",
 };
 </script>
-<style></style>
