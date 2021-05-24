@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface");
+
+html {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+@media (min-width: 48em) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 58em) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}

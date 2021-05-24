@@ -4,25 +4,25 @@
       <div class="mat-card-avatar">
         <font-awesome-icon :icon="['fas', 'graduation-cap']" />
       </div>
-      <div class="mat-card-title">"'resume.education.title' | translate"</div>
+      <div class="mat-card-title">{{ $t("resume.education.title") }}</div>
     </div>
     <div class="mat-card-content mat-typography">
       <!-- CVUT -->
       <div class="experience-item">
         <div class="enterprise-date">
           <div class="enterprise mat-title">
-            "'resume.education.cvut.title' | translate"
+            {{ $t("resume.education.cvut.title") }}
           </div>
           <div class="date mat-h3">
-            "'resume.education.cvut.duration' | translate"
+            {{ $t("resume.education.cvut.duration") }}
           </div>
         </div>
         <div class="mat-body-strong">
-          "'resume.education.cvut.subtitle' | translate"
+          {{ $t("resume.education.cvut.subtitle") }}
         </div>
         <div class="mat-list" role="list">
           <div class="mat-list-item" role="listitem">
-            "'resume.education.cvut.description' | translate"
+            {{ $t("resume.education.cvut.description") }}
           </div>
         </div>
         <div class="mat-divider"></div>
@@ -31,18 +31,18 @@
       <div class="experience-item">
         <div class="enterprise-date">
           <div class="enterprise mat-title">
-            "'resume.education.tse.title' | translate"
+            {{ $t("resume.education.tse.title") }}
           </div>
           <div class="date mat-h3">
-            "'resume.education.tse.duration' | translate"
+            {{ $t("resume.education.tse.duration") }}
           </div>
         </div>
         <div class="mat-body-strong">
-          "'resume.education.tse.subtitle' | translate"
+          {{ $t("resume.education.tse.subtitle") }}
         </div>
         <div class="mat-list" role="list">
           <div class="mat-list-item" role="listitem">
-            "'resume.education.tse.description' | translate"
+            {{ $t("resume.education.tse.description") }}
           </div>
         </div>
         <div class="mat-divider"></div>
@@ -51,18 +51,18 @@
       <div class="experience-item">
         <div class="enterprise-date">
           <div class="enterprise mat-title">
-            "'resume.education.prepa.title' | translate"
+            {{ $t("resume.education.prepa.title") }}
           </div>
           <div class="date mat-h3">
-            "'resume.education.prepa.duration' | translate"
+            {{ $t("resume.education.prepa.duration") }}
           </div>
         </div>
         <div class="mat-body-strong">
-          "'resume.education.prepa.subtitle' | translate"
+          {{ $t("resume.education.prepa.subtitle") }}
         </div>
         <div class="mat-list" role="list">
           <div class="mat-list-item" role="listitem">
-            "'resume.education.prepa.description' | translate"
+            {{ $t("resume.education.prepa.description") }}
           </div>
         </div>
       </div>
@@ -75,5 +75,4 @@ export default {
   name: "ResumeEducation",
 };
 </script>
-<style>
-</style>
+<style></style>

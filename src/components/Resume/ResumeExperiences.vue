@@ -4,18 +4,18 @@
       <div mat-card-avatar>
         <font-awesome-icon :icon="['fas', 'brief-case']" />
       </div>
-      <div class="mat-card-title">"'resume.experiences.title' | translate"</div>
+      <div class="mat-card-title">{{ $t("resume.experiences.title") }}</div>
     </div>
     <div class="mat-card-content mat-typography">
       <!-- Sopra Steria -->
       <div class="experience-item">
         <div class="enterprise-date">
           <div
-            [innerHTML]="'resume.experiences.sopra.title' | translate"
+            v-html="$t('resume.experiences.sopra.title')"
             class="enterprise mat-title"
           ></div>
           <div
-            [innerHTML]="'resume.experiences.sopra.duration' | translate"
+            v-html="$t('resume.experiences.sopra.duration')"
             class="date mat-h3"
           ></div>
         </div>
@@ -23,22 +23,22 @@
           <div
             class="mat-list-item"
             role="listitem"
-            [innerHTML]="'resume.experiences.sopra.jobs.one' | translate"
+            v-html="$t('resume.experiences.sopra.jobs.one')"
           ></div>
           <div
             class="mat-list-item"
             role="listitem"
-            [innerHTML]="'resume.experiences.sopra.jobs.two' | translate"
+            v-html="$t('resume.experiences.sopra.jobs.two')"
           ></div>
           <div
             class="mat-list-item"
             role="listitem"
-            [innerHTML]="'resume.experiences.sopra.jobs.three' | translate"
+            v-html="$t('resume.experiences.sopra.jobs.three')"
           ></div>
           <div
             class="mat-list-item"
             role="listitem"
-            [innerHTML]="'resume.experiences.sopra.jobs.four' | translate"
+            v-html="$t('resume.experiences.sopra.jobs.four')"
           ></div>
         </div>
         <div class="mat-divider"></div>
@@ -47,11 +47,11 @@
       <div class="experience-item">
         <div class="enterprise-date">
           <div
-            [innerHTML]="'resume.experiences.exyzt.title' | translate"
+            v-html="$t('resume.experiences.exyzt.title')"
             class="enterprise mat-title"
           ></div>
           <div
-            [innerHTML]="'resume.experiences.exyzt.duration' | translate"
+            v-html="$t('resume.experiences.exyzt.duration')"
             class="date mat-h3"
           ></div>
         </div>
@@ -59,7 +59,7 @@
           <div
             class="mat-list-item"
             role="listitem"
-            [innerHTML]="'resume.experiences.exyzt.job' | translate"
+            v-html="$t('resume.experiences.exyzt.job')"
           ></div>
         </div>
         <div class="mat-divider"></div>
@@ -69,10 +69,10 @@
         <div class="enterprise-date">
           <div
             class="enterprise mat-title"
-            [innerHTML]="'resume.experiences.prefecture.title' | translate"
+            v-html="$t('resume.experiences.prefecture.title')"
           ></div>
           <div
-            [innerHTML]="'resume.experiences.prefecture.duration' | translate"
+            v-html="$t('resume.experiences.prefecture.duration')"
             class="date mat-h3"
           ></div>
         </div>
@@ -80,7 +80,7 @@
           <div
             class="mat-list-item"
             role="listitem"
-            [innerHTML]="'resume.experiences.prefecture.job' | translate"
+            v-html="$t('resume.experiences.prefecture.job')"
           ></div>
         </div>
       </div>
@@ -95,4 +95,13 @@ export default {
 </script>
 
 <style>
+.job-header {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+b {
+  font-weight: 450;
+  font-style: italic;
+}
 </style>

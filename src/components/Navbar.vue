@@ -1,7 +1,7 @@
 <template>
   <div id="sidebar">
     <div id="sidebar-about">
-      <h1>Logdown</h1>
+      <h1>{{ $t("home.title") }}</h1>
       <p class="lead">{{ $t("home.navbar.description") }}</p>
     </div>
     <nav id="sidebar-nav">
@@ -12,31 +12,21 @@
         $t("home.navbar.resume-link")
       }}</router-link>
 
-      <div class="justify-between">
-        <div class="justify-between">
+      <div id="nav-icons" class="justify-between">
+        <button id="lang-btn">
+          <font-awesome-icon :icon="['fas', 'globe']" />
+          <ul id="lang-menu">
+            <li role="listitem" @click="$i18n.locale = 'en'">English</li>
+            <li role="listitem" @click="$i18n.locale = 'fr'">Français</li>
+          </ul>
+        </button>
+        <div class="justify-between sidebar-nav-icons">
           <a class="sidebar-nav-icon" href="https://github.com/TheoGthr">
             <font-awesome-icon :icon="['fab', 'github']" />
           </a>
           <a class="sidebar-nav-icon" href="https://twitter.com/TheoGFasee">
             <font-awesome-icon :icon="['fab', 'twitter']" />
           </a>
-        </div>
-        <div>
-          <!-- <button
-            mat-icon-button
-            [matMenuTriggerFor]="menu"
-            [matTooltip]="'home.navbar.language-tooltip' | translate"
-          >
-            <mat-icon>language</mat-icon>
-          </button>
-          <mat-menu #menu="matMenu">
-            <button mat-menu-item (click)="setLang('fr')">Français</button>
-            <button mat-menu-item (click)="setLang('en')">English</button>
-          </mat-menu-->
-          <select v-model="$i18n.locale">
-            <option>en</option>
-            <option>fr</option>
-          </select>
         </div>
       </div>
     </nav>
@@ -50,9 +40,45 @@ export default {
 </script>
 
 <style scoped>
-.justify-between {
-  display: flex;
-  justify-content: space-between;
+#lang-menu {
+  display: block;
+  margin: 8px 0 0 0;
+  padding: 0;
+  background-color: #fff;
+  color: rgb(55, 55, 55);
+  list-style: none;
+  position: absolute;
+  bottom: 60px;
+  left: 15%;
+  display: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
+    0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+  outline: 0;
+}
+
+#lang-menu li {
+  padding-top: 1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+  float: none;
+}
+
+#lang-btn:hover > #lang-menu {
+  /* Display the dropdown on hover */
+  display: block; /* Bring back on-screen when needed */
+}
+
+li {
+  font-size: 14px;
+  display: block;
+  line-height: 48px;
+  height: 48px;
+  padding: 0 16px;
+}
+
+li:hover {
+  /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+  background-color: rgb(236, 236, 236);
+  border-radius: 4px;
 }
 
 /*
@@ -62,7 +88,7 @@ export default {
  * out above content in mobile and later moves to the side with wider viewports.
  */
 #sidebar {
-  width: 20%;
+  width: 18%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -98,12 +124,14 @@ export default {
 
 /* Sidebar nav */
 #sidebar-nav {
+  width: 100%;
   margin-bottom: 1rem;
 }
 
 .sidebar-nav-item {
   display: block;
   line-height: 1.75;
+  text-decoration: none;
 }
 
 a.sidebar-nav-item:hover,
@@ -111,15 +139,21 @@ a.sidebar-nav-item:focus {
   text-decoration: underline;
 }
 
-.sidebar-nav-item.active {
+.sidebar-nav-item.router-link-active {
   font-weight: bold;
 }
 
-.sidebar-nav-icon {
+#nav-icons {
   margin-top: 0.4rem;
+}
+
+.sidebar-nav-icons {
+  width: 20%;
+}
+
+.sidebar-nav-icon {
   display: inline-block;
   line-height: 1.75;
-  height: 1.75;
   vertical-align: bottom;
 }
 
@@ -127,5 +161,21 @@ a.sidebar-nav-item:focus {
   color: rgb(55, 55, 55);
   font-size: 1.25rem;
   font-weight: 350;
+}
+
+/* Style buttons */
+#lang-btn {
+  background-color: #77482f;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  padding: 8px 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+#lang-btn:hover {
+  background-color: #8f5536;
 }
 </style>
