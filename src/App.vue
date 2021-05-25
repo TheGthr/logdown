@@ -28,7 +28,7 @@ export default {
   align-items: center;
   width: 100vw;
   min-height: 100vh;
-  background-color: #374151;
+  background-color: #282c34;
   color: #d1d5db;
 }
 </style>

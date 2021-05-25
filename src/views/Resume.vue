@@ -1,5 +1,5 @@
 <template>
-  <div class="content container">
+  <div class="resume-content container">
     <ResumeExperiences class="resume-card resume-left" />
     <div class="resume-right">
       <ResumeEducation class="resume-card" />
@@ -18,8 +18,8 @@ export default {
 };
 </script>
 
-<style scoped>
-.content,
+<style>
+.resume-content,
 .container {
   max-width: 100%;
   display: flex;
@@ -59,8 +59,22 @@ export default {
   font-size: 17px;
 }
 
-b {
+.resume-b {
   font-weight: 450;
   font-style: italic;
+}
+
+.enterprise-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.enterprise {
+  font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif;
+  color: #d28445;
+}
+
+.experience-item {
+  padding-top: 8px;
 }
 </style>
