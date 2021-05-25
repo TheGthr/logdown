@@ -77,4 +77,27 @@ export default {
 .experience-item {
   padding-top: 8px;
 }
+
+.interest > svg {
+  color: #d28445;
+}
+
+.all-interests {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.two-interests {
+  display: flex;
+  flex-direction: column;
+}
+
+.interest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+}
 </style>
